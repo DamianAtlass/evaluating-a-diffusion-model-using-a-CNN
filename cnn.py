@@ -1,19 +1,10 @@
 import torch
 import torch.nn.functional as F
-import torchvision.datasets as datasets
-import torchvision.transforms as transforms
-from pywin.scintilla.scintillacon import SCE_NNCRONTAB_MODIFIER
-from sympy.solvers.ode.systems import matrix_exp_jordan_form
-from torchvision.transforms import ToTensor
-from torch import optim
 from torch import nn
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from matplotlib import pyplot as plt
-from time import time
-import math
 device = "cuda" if torch.cuda.is_available() else "cpu"
 # taken from https://medium.com/@myringoleMLGOD/simple-convolutional-neural-network-cnn-for-dummies-in-pytorch-a-step-by-step-guide-6f4109f6df80
+
+
 class CNN(nn.Module):
     def __init__(self, in_channels, num_classes=10):
         """
