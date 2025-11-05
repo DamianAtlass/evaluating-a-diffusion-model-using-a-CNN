@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+/.venv
+/.idea
+/old_X_tensors
+/saved_data
+/data
